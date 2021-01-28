@@ -33,6 +33,7 @@ def main():
 		st.subheader("Home")
 		# st.write(desc_temp)
 		st.markdown(desc_temp, unsafe_allow_html=True)
+        st.write("Choose from the Menu bar on the left)
 
 	elif choice == "EDA":
 		run_eda_app()
