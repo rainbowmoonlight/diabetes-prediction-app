@@ -32,11 +32,11 @@ def main():
 		st.subheader("Home")
 		# st.write(desc_temp)
 		st.markdown(desc_temp, unsafe_allow_html=True)
-		run_ml_app
+		run_ml_app()
 
 	elif choice == "EDA":
 		run_eda_app()
-		
+
 	else:
 		st.subheader("About")
 
