@@ -16,8 +16,9 @@ desc_temp = """
 			#### Datasource
 				- https://archive.ics.uci.edu/ml/datasets/Early+stage+diabetes+risk+prediction+dataset.
 			#### App Content
-				- EDA Section: Exploratory Data Analysis of Data
 				- ML Section: ML Predictor App
+				- EDA Section: Exploratory Data Analysis of Data
+				
 
 			"""
 
@@ -25,11 +26,11 @@ def main():
 	# st.title("Main App")
 	stc.html(html_temp)
 
-	menu = ["Home", "EDA","ML","About"]
+	menu = ["ML", "EDA","About"]
 	choice = st.sidebar.selectbox("Menu",menu)
 
-	if choice == "Home":
-		st.subheader("Home")
+	if choice == "ML":
+		st.subheader("Machine Learning")
 		# st.write(desc_temp)
 		st.markdown(desc_temp, unsafe_allow_html=True)
 		run_ml_app()
