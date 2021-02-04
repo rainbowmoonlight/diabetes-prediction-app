@@ -32,12 +32,11 @@ def main():
 		st.subheader("Home")
 		# st.write(desc_temp)
 		st.markdown(desc_temp, unsafe_allow_html=True)
-		st.success("Choose from the Menu bar on the left")
+		run_ml_app
 
 	elif choice == "EDA":
 		run_eda_app()
-	elif choice == "ML":
-		run_ml_app()
+		
 	else:
 		st.subheader("About")
 
