@@ -30,7 +30,7 @@ def main():
 	choice = st.sidebar.selectbox("Menu",menu)
 
 	if choice == "ML":
-		st.subheader("Machine Learning")
+		st.subheader("Machine Learning Predictor App")
 		# st.write(desc_temp)
 		st.markdown(desc_temp, unsafe_allow_html=True)
 		run_ml_app()
